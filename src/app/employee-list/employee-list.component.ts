@@ -41,4 +41,8 @@ export class EmployeeListComponent implements OnInit {
     error => console.log(error));
   }
 
+  employeeDetails(id:number){
+    this.router.navigate(['details',id]);
+  }
+
 }
