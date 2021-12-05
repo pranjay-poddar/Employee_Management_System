@@ -24,7 +24,7 @@
 }
 
 .nav-link {
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     font-weight: 500;
     font-size: 118%;
     margin-left: 5px;
@@ -33,7 +33,8 @@
 }
 
 button.navbar-toggler {
-    border: 0;
+    border: 2px solid black;
+    background-color: rgb(87, 87, 87);
 }
 
 @media (max-width:991px) {

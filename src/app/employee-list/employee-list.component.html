@@ -1,11 +1,12 @@
 <div class="container">
     <h2>Employee List </h2>
-    <table class="table table-striped text-center">
+    <table class="table table-responsive-sm table-striped text-center">
         <thead>
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email Id</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -13,6 +14,8 @@
                 <td>{{employee.firstname}}</td>
                 <td>{{employee.lastname}}</td>
                 <td>{{employee.emailId}}</td>
+                <td><button class="btn btn-primary btn-sm" (click)="updateemployee(employee.id)">Update</button></td>
+                <td><button class="btn btn-danger btn-sm" (click)="deleteemployee(employee.id)">Delete</button></td>
             </tr>
         </tbody>
     </table>
