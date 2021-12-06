@@ -1,5 +1,6 @@
 <div class="container">
-    <h2>Employee List </h2>
+    <h2 class="text-center">Employee List </h2>
+    <br>
     <table class="table table-responsive-sm table-striped text-center">
         <thead>
             <tr>
@@ -15,9 +16,9 @@
                 <td>{{employee.lastname}}</td>
                 <td>{{employee.emailId}}</td>
                 <td>
-                    <button (click)="updateemployee(employee.id)" class="btn btn-primary btn-sm">Update</button>
-                    <button (click)="deleteemployee(employee.id)" class="btn btn-danger btn-sm" style="margin-left: 10px;">Delete</button>
-                    <button (click)="employeeDetails(employee.id)" class="btn btn-info btn-sm" style="margin-left: 10px;">View</button></td>
+                    <button (click)="updateemployee(employee.id)" class="btn btn-primary btn-sm buttons">Update</button>
+                    <button (click)="deleteemployee(employee.id)" class="btn btn-danger btn-sm buttons">Delete</button>
+                    <button (click)="employeeDetails(employee.id)" class="btn btn-info btn-sm buttons">View</button></td>
             </tr>
         </tbody>
     </table>
