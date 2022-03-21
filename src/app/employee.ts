@@ -3,4 +3,8 @@ export class Employee {
     firstname !: string;
     lastname !: string;
     emailId !: string;
+    phone !: string;
+    posting !: string;
+    position !: string;
+    leaves !: string;
 }
